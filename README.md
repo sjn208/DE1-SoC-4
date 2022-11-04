@@ -1,4 +1,4 @@
-# DE1-SoC-4, Embedded Design
+# DE1-SoC-4, Embedded Design (C++)
 
 Main codes to run include Main and MainB cpp files. Makefiles for these are respectively named with 4a and 4b. 
 
