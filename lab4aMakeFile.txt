@@ -1,0 +1,16 @@
+# SevenSegment Makefile
+
+mydisplay: Main.o SevenSegment.o DE1SoCfpga.o
+	g++ Main.o SevenSegment.o DE1SoCfpga.o -o mydisplay
+
+Main.o: Main.cpp SevenSegment.h DE1SoCfpga.h
+	g++ -c Main.cpp
+
+SevenSegment.o: SevenSegment.cpp SevenSegment.h
+	g++ -c SevenSegment.cpp
+
+De1SoCfpga.o: DE1SoCfpga.cpp DE1SoCfpga.h
+	g++ -c DE1SoCfpga.cpp
+
+clean: 
+	rm Main.o SevenSegment.o DE1SoCfpga.o
